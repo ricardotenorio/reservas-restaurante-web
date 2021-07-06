@@ -1,0 +1,128 @@
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(20, 5%);
+    grid-template-rows: repeat(20, 5%);
+}
+.header{
+    background-color: brown;
+    border: 2px solid black;
+    grid-column-start: 1;
+    grid-column-end: 21;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.item1{
+    font-size: 80px;
+    grid-column-start: 9;
+    grid-column-end: 14;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item2{
+    grid-column-start: 19;
+    grid-column-end: 21;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item3{
+    text-align: center;
+    font-size: 20px;
+    grid-column-start: 18;
+    grid-column-end: 21;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.section1{
+    background-color: grey;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 50px;
+    grid-column-start: 6;
+    grid-column-end: 16;
+    grid-row-start: 8;
+    grid-row-end: 19;
+}
+.section2{
+    background-color: gray;
+    border: 2px solid brown;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 10;
+}
+.section3{
+    background-color: gray;
+    border: 2px solid brown;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 12;
+    grid-row-end: 14;
+}
+.section4{
+    background-color: gray;
+    border: 2px solid brown;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 16;
+    grid-row-end: 18;
+}
+.section5{
+    font-size: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 2px solid brown;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 8;
+    grid-row-end: 10;
+}
+.section6{
+    background-color: whitesmoke;
+    border: 2px solid brown;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 12;
+    grid-row-end: 14;
+}
+.section7{
+    background-color: whitesmoke;
+    border: 2px solid brown;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    grid-row-start: 16;
+    grid-row-end: 18;
+}
+.form1{
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
+.form2{
+    grid-column-start: 11;
+    grid-column-end: 15;
+    grid-row-start: 10;
+    grid-row-end: 11;
+}
+.form3{
+    grid-column-start: 11;
+    grid-column-end: 15;
+    grid-row-start: 11;
+    grid-row-end: 12;
+}
+
+.search-box{
+    grid-column-start: 18;
+    grid-column-end: 21;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+a:link{
+    color:black
+}
+a:visited{
+    color:black
+}
