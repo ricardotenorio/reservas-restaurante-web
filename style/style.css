@@ -6,12 +6,27 @@ body{
     grid-template-columns: repeat(20, 5%);
     grid-template-rows: repeat(20, 5%);
 }
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+a:visited{
+    color:black
+}
+
 .main-header{
     background-color: #DE9E36;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
 
-    /* width: 100vw;
-    height: 20vh; */
     grid-area: 1 / 1 / 5 / 21;
 
     display: flex;
@@ -25,36 +40,72 @@ body{
 
 .logged-user {
     margin-left: 85vw;
+    height: 20%;
+    width: 15%;
     position: absolute;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .logged-user img{
-    width: 3rem;
-    height: 3rem;
+    width: 10vh;
+    height: 10vh;
 
     border-radius: 50%;
 }
 
-/* ---------------------------------------------------------------------- */
 
-.item3{
+.auth-links {
     text-align: center;
-    font-size: 20px;
+    font-size: 3vh;
+    
+    padding: 0 5vw;
+}
+
+.search-box{
+    /* height: 5vh;
+    width: 10vw; */
+    padding: 0;
+
     grid-column-start: 18;
     grid-column-end: 21;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
-.section1{
-    background-color: grey;
-    border: 2px solid black;
+
+.search-box input {
+    height: 4vh;
+    width: 8vw;
+}
+
+.search-box button {
+    background-color: rgb(154, 192, 154);
+
+    height: 4vh;
+    width: 5vw;
+    border: none;
+}
+
+.main-section {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 3%;
+
+    font-size: 3vh;
+    text-align: justify;
+
+    grid-area: 8 / 6 / 19 / 16;
+}
+
+.main-section h3 {
     text-align: center;
-    font-size: 50px;
-    grid-column-start: 6;
-    grid-column-end: 16;
-    grid-row-start: 8;
-    grid-row-end: 19;
 }
+
+/* ---------------------------------------------------------------------- */
+
 .section2{
     background-color: gray;
     border: 2px solid brown;
@@ -122,17 +173,4 @@ body{
     grid-column-end: 15;
     grid-row-start: 11;
     grid-row-end: 12;
-}
-
-.search-box{
-    grid-column-start: 18;
-    grid-column-end: 21;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
-a:link{
-    color:black
-}
-a:visited{
-    color:black
 }
