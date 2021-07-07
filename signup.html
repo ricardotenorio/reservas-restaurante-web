@@ -17,29 +17,15 @@
         <h4>Cadastre-se!</h4>
 
         <form class="signup-form" action="signup.html" method="POST">
-            <menu class="form1">
-                <label for="name">
-                    Nome
-                </label>
+            
+            <label for="name">Nome</label>
+            <input id="name" type="text" name="name" placeholder="Nome" required>
 
-                <input id="name" type="text" name="name" placeholder="Nome" required>
-            </menu>   
+            <label for="password">Senha</label>
+            <input id="password" type="password" name="password" placeholder="Senha" required>
 
-            <menu class="form2">
-                <label for="password">
-                    Senha
-                </label>
-
-                <input id="password" type="password" name="password" placeholder="Senha" required>
-            </menu>
-
-            <menu class="form3">
-                <label for="repeat-password">
-                    Digite a senha novamente
-                </label>
-
-                <input id="repeat-password" type="password" name="repeat-password" placeholder="Senha" required>
-            </menu>
+            <label for="repeat-password">Digite a senha novamente</label>
+            <input id="repeat-password" type="password" name="repeat-password" placeholder="Senha" required>
 
             <button type="submit">Enviar</button>
         

@@ -13,24 +13,22 @@
     <article id="search-box">
     </article>
 
-    <section class="section1">
-        Login!
+    <article class="main-section">
+        <h4>Entrar</h4>
+
+        <form class="signup-form" action="signup.html" method="POST">
+
+            <label for="name">Nome</label>
+            <input id="name" type="text" name="name" placeholder="Nome">
+
+            <label for="password">Senha</label>
+            <input id="password" type="password" name="password" placeholder="Senha">
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    
     </section>
-
-    <menu class="form1">
-        <form action="signup.html" method="POST">
-            <label for="inputEmail">
-            </label>
-            <input id="inputEmail" type="text" name="email" placeholder="E-mail">
-    </menu>  
-
-    <menu class="form2">
-        <label for="inputPassword">
-        </label>
-        <input id="inputPassword" type="text" name="password" placeholder="Password">
-    </menu>
-
-    </form>  
     
     <script src="./script/template/renderTemplate.js">
     </script>
