@@ -108,6 +108,40 @@ a:visited{
     text-align: center;
     font-size: 4vh;
 }
+
+#restaurant-list {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    grid-column-start: 4;
+    grid-column-end: 18;
+    grid-row-start: 8;
+}
+
+.restaurant-card {
+    border: 2px solid black;
+    flex: 1 0 20vw;
+    text-align: justify;
+
+    margin: 3px;
+}
+
+.restaurant-card img {
+    border-radius: 50%;
+    height: 10vh;
+    width: 10vh;
+}
+
+.restaurant-card h4 {
+    text-align: center;
+}
+
+
 /* ---------------------------------------------------------------------- */
 
 .section2{
