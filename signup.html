@@ -7,51 +7,48 @@
 </head>
 <body>
     
-    <header class="header">
+    <header id="main-header">
     </header>
 
-    <div class="item1">
-        Reservas
-    </div>
+    <article id="search-box">
+    </article>
 
-    <div class="item2">
-        <img src="#" alt="logo usuário" width="80" height="80">
-    </div>
+    <article class="main-section">
+        <h4>Cadastre-se!</h4>
 
-    <div class="item3">
-        <a href="login.html">entrar</a>
-        /
-        <a href="signup.html">cadastro</a>
-    </div>
+        <form class="signup-form" action="signup.html" method="POST">
+            <menu class="form1">
+                <label for="name">
+                    Nome
+                </label>
 
-    <section class="section1">
-        Cadastre-se!
-    </section>
+                <input id="name" type="text" name="name" placeholder="Nome" required>
+            </menu>   
 
-    <menu class="form1">
-        <form action="signup.html" method="POST">
-            <label for="inputEmail">
-            </label>
-            <input id="inputEmail" type="text" name="email" placeholder="E-mail">
-    </menu>   
+            <menu class="form2">
+                <label for="password">
+                    Senha
+                </label>
 
-    <menu class="form2">
-        <label for="inputPassword">
-        </label>
-        <input id="inputPassword" type="text" name="password" placeholder="Password">
-    </menu>
+                <input id="password" type="password" name="password" placeholder="Senha" required>
+            </menu>
 
-    <menu class="form3">
-        <label for="inputRPassword">
-        </label>
-        <input id="inputRPassword" type="text" name="Rpassword" placeholder="Repeat Password">
-    </menu>
-    
+            <menu class="form3">
+                <label for="repeat-password">
+                    Digite a senha novamente
+                </label>
+
+                <input id="repeat-password" type="password" name="repeat-password" placeholder="Senha" required>
+            </menu>
+
+            <button type="submit">Enviar</button>
+        
         </form>
-    <menu class="search-box">
-        <input class="search-txt" type="text" name="Search" placeholder="Search">
-        <a class="search-button" href="#"></a>
-    </menu>
+    
+    </article>
+    
+    <script src="./script/template/renderTemplate.js">
+    </script>
     
 </body>
 </html>

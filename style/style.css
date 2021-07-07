@@ -104,6 +104,10 @@ a:visited{
     text-align: center;
 }
 
+.main-section h4 {
+    text-align: center;
+    font-size: 4vh;
+}
 /* ---------------------------------------------------------------------- */
 
 .section2{
@@ -156,21 +160,24 @@ a:visited{
     grid-row-start: 16;
     grid-row-end: 18;
 }
-.form1{
-    grid-column-start: 8;
-    grid-column-end: 12;
-    grid-row-start: 10;
-    grid-row-end: 11;
+
+.signup-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.form2{
-    grid-column-start: 11;
-    grid-column-end: 15;
-    grid-row-start: 10;
-    grid-row-end: 11;
+
+.signup-form * {
+    flex: 1 0 20vw;
+    margin: 1vh 5vw;
+    text-align: center;
 }
-.form3{
-    grid-column-start: 11;
-    grid-column-end: 15;
-    grid-row-start: 11;
-    grid-row-end: 12;
+
+.signup-form button {
+    background-color: #36de68;
+    border: 2px solid black;
+    border-radius: 0px;
+
+    height: 5vh;
+    width: 5vw;
 }
