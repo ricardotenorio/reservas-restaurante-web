@@ -5,6 +5,8 @@ body{
     display: grid;
     grid-template-columns: repeat(20, 5%);
     grid-template-rows: repeat(20, 5%);
+
+    text-align: center;
 }
 
 h3 {
@@ -141,64 +143,30 @@ a:visited{
     text-align: center;
 }
 
-
-/* ---------------------------------------------------------------------- */
-
-.section2{
-    background-color: gray;
-    border: 2px solid brown;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 8;
-    grid-row-end: 10;
-}
-.section3{
-    background-color: gray;
-    border: 2px solid brown;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 12;
-    grid-row-end: 14;
-}
-.section4{
-    background-color: gray;
-    border: 2px solid brown;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 16;
-    grid-row-end: 18;
-}
-.section5{
-    font-size: 20px;
-    text-align: center;
-    background-color: whitesmoke;
-    border: 2px solid brown;
-    grid-column-start: 6;
-    grid-column-end: 12;
-    grid-row-start: 8;
-    grid-row-end: 10;
-}
-.section6{
-    background-color: whitesmoke;
-    border: 2px solid brown;
-    grid-column-start: 6;
-    grid-column-end: 12;
-    grid-row-start: 12;
-    grid-row-end: 14;
-}
-.section7{
-    background-color: whitesmoke;
-    border: 2px solid brown;
-    grid-column-start: 6;
-    grid-column-end: 12;
-    grid-row-start: 16;
-    grid-row-end: 18;
-}
-
-.signup-form {
+#user-details {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    grid-column-start: 4;
+    grid-column-end: 18;
+    grid-row-start: 8;
+
+    height: 10vh;
+}
+
+#user-details img {
+    border-radius: 50%;
+    height: 90%;
+}
+
+.restaurant-list-header {
+    grid-column-start: 4;
+    grid-column-end: 18;
+    grid-row-start: 12;
+    
+    position: relative;
 }
 
 .signup-form * {
