@@ -23,7 +23,7 @@ a:visited{
     color:black
 }
 
-.main-header{
+#main-header{
     background-color: #DE9E36;
     border-bottom: 2px solid black;
 
@@ -34,7 +34,7 @@ a:visited{
     justify-content: center;
 }
 
-.main-header h3 {
+#main-header h3 {
     font-size: 8vh;
 }
 
@@ -65,7 +65,7 @@ a:visited{
     padding: 0 5vw;
 }
 
-.search-box{
+#search-box{
     /* height: 5vh;
     width: 10vw; */
     padding: 0;
@@ -76,12 +76,12 @@ a:visited{
     grid-row-end: 6;
 }
 
-.search-box input {
+#search-box input {
     height: 4vh;
     width: 8vw;
 }
 
-.search-box button {
+#search-box button {
     background-color: rgb(154, 192, 154);
 
     height: 4vh;
