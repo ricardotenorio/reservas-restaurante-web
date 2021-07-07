@@ -13,9 +13,25 @@
     <article id="search-box">
     </article>
     
-    <section class="section8"></section>
-    <section class="section9"></section>
-    <section class="section10"></section>
+    <article class="restaurant-card center-grid-sm">
+        <a href="#">
+            <img src="./img/pizza.jpg" alt="">
+            <h4>Nome</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dicta.</p>
+        </a>
+    </article>
+
+    <article class="reservation-form-container">
+        <h4>Faça sua reserva</h4>
+
+        <form class="signup-form" action="#">
+            <label for="date-input">Data</label>
+            <input type="date" name="reservation-date" id="date-input" required>
+
+            <label for="hour-input">Hora</label>
+            <input type="number" min="8" max="23" required>
+        </form>
+    </article>
     
     <script src="./script/template/renderTemplate.js">
     </script>
