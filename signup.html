@@ -16,7 +16,7 @@
     <article class="main-section">
         <h4>Cadastre-se!</h4>
 
-        <form class="signup-form" action="signup.html" method="POST">
+        <form id="signup-form" class="signup-form" action="#">
             
             <label for="name">Nome</label>
             <input id="name" type="text" name="name" placeholder="Nome" required>
@@ -27,14 +27,17 @@
             <label for="repeat-password">Digite a senha novamente</label>
             <input id="repeat-password" type="password" name="repeat-password" placeholder="Senha" required>
 
-            <button type="submit">Enviar</button>
+            <button id="signup-btn" type="submit">Enviar</button>
         
         </form>
     
     </article>
     
-    <script src="./script/template/renderTemplate.js">
-    </script>
+    <script src="./script/template/renderTemplate.js"></script>
+
+    <script src="./script/signup.js"></script>
+    
+    <script src="./script/isAuth.js"></script>
     
 </body>
 </html>
