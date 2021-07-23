@@ -67,6 +67,11 @@ a:visited{
     padding: 0 5vw;
 }
 
+#nav {
+    width: 100vw;
+    text-decoration: underline;
+}
+
 #search-box{
     /* height: 5vh;
     width: 10vw; */

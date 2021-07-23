@@ -1,4 +1,5 @@
 const header = document.querySelector('#main-header');
+const nav = document.querySelector('#nav');
 const searchBox = document.querySelector('#search-box');
 
 let username = localStorage["name"];
@@ -13,28 +14,44 @@ const linkProfile = `
 
 const renderHeader = (elem) => {
   const content = `
-                  <a href="./index.html">
-                    <h3 class="site-title">
-                      Reservas
-                    </h3>
-                  </a>
-                  <div class="logged-user">
-                      <img src="img/avatar.png" alt="logo usuário">
+      <a href="./index.html">
+        <h3 class="site-title">
+          Reservas
+        </h3>
+      </a>
+      <div class="logged-user">
+          <img src="img/avatar.png" alt="logo usuário">
 
-                      <div class="auth-links">
-                          ${username ? linkProfile : linkLogin}
-                      </div>
-                  </div>`;
+          <div class="auth-links">
+              ${username ? linkProfile : linkLogin}
+          </div>
+      </div>
+    `;
 
   elem.innerHTML = content;
 }
 
+const renderNav = (elem) => {
+  const content = `
+      <a href="./restaurants.html">
+        <h3>
+          lista de restaurantes
+        </h3>
+      </a>
+    `;
+  
+  elem.innerHTML = content;
+}
+
 const renderSearchBar = (elem) => {
-  const content = `<input id="search-txt" type="text" name="Search" placeholder="Buscar">
-                   <button>Ok</button>`
+  const content = `
+      <input id="search-txt" type="text" name="Search" placeholder="Buscar">
+      <button>Ok</button>
+    `;
 
   elem.innerHTML = content;
 }
 
 renderHeader(header);
+renderNav(nav);
 renderSearchBar(searchBox);
