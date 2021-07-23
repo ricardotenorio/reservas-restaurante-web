@@ -1,6 +1,11 @@
 const header = document.querySelector('#main-header');
 const searchBox = document.querySelector('#search-box');
 
+let username = localStorage["name"];
+const links = `<a href="login.html">entrar</a>
+  /
+  <a href="signup.html">cadastro</a>`
+
 const renderHeader = (elem) => {
   const content = `<h3 class="site-title">Reservas</h3>
         
@@ -8,9 +13,7 @@ const renderHeader = (elem) => {
                       <img src="img/avatar.png" alt="logo usuário">
 
                       <div class="auth-links">
-                          <a href="login.html">entrar</a>
-                          /
-                          <a href="signup.html">cadastro</a>
+                          ${username ? username : links}
                       </div>
                   </div>`;
 

@@ -1,5 +1,3 @@
-const storage = localStorage;
-
-if (storage['isAuth'] === true) {
+if(localStorage['isAuth']) {
   window.location.href = './user_profile.html';
 }
