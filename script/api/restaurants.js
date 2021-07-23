@@ -2,8 +2,8 @@ const url = 'https://reservas-ifpe-web.herokuapp.com/api/restaurants';
 
 const restaurantsElem = document.querySelector('#restaurant-list');
 
-const renderRestaurant = (data) => {
-    const content = data.map((restaurant) => {
+const renderRestaurants = (data) => {
+    data.map((restaurant) => {
         const elem = `
         <article class="restaurant-card">
             <a href="./reservation.html?id=${restaurant.id}">
@@ -14,7 +14,7 @@ const renderRestaurant = (data) => {
         </article>
         `
         restaurantsElem.innerHTML += elem;
-    })
+    });
 }
 
 async function getRestaurants(url) {
@@ -32,5 +32,5 @@ async function getRestaurants(url) {
 
 getRestaurants(url)
     .then(data => {
-        renderRestaurant(data);
+        renderRestaurants(data);
     });
